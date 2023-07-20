@@ -1,3 +1,4 @@
+
 .box_shadow_our_app:hover {
     border: 1px solid;
     border-image: linear-gradient(180deg, #33A7F9 0%, rgba(51, 167, 249, 0.45) 63.02%, rgba(51, 167, 249, 0) 100%);
@@ -262,9 +263,10 @@
     margin-top: 15px;
 }
 
-/* .accordion-button::after {
-        background-image: url(./assets/img/svg/downarrow.svg) !important;
-      } */
+.accordion-button::after {
+    background-image: url(/assets/img/svg/aero.svg) !important;
+}
+
 .accordion-button:not(.collapsed) {
     box-shadow: none !important;
 }
@@ -341,8 +343,11 @@ textarea {
 }
 
 /* footer */
-.footer_hover:hover svg path {
-    fill: var(--color-clr_blue) !important;
+.footer_hover {
+    transition: all 0.4s linear;
+}
+
+.footer_hover:hover {
     transform: scaleX(1.1) scaleY(1.1) !important;
 }
 
@@ -358,9 +363,9 @@ textarea {
     }
 }
 
-@media (max-width:768px) {
+@media (max-width:767px) {
     nav ul {
-        position: fixed;
+        position: fixed !important;
         top: 0;
         left: -100%;
         background-color: var(--color-clr_black) !important;
