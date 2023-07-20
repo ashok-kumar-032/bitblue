@@ -365,6 +365,14 @@ textarea {
     transform: scaleX(1.1) scaleY(1.1) !important;
 }
 
+.footer_hover:hover svg path {
+    stroke: var(--color-clr_blue);
+}
+
+.footer_hover svg path {
+    transition: all 0.4s linear;
+}
+
 .footer_line {
     height: 2px !important;
     background-color: var(--color-clr_white_1);
