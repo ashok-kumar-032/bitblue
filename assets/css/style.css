@@ -1,11 +1,10 @@
-
-.box_shadow_our_app:hover {
+.box_shadow_our:hover {
     border: 1px solid;
     border-image: linear-gradient(180deg, #33A7F9 0%, rgba(51, 167, 249, 0.45) 63.02%, rgba(51, 167, 249, 0) 100%);
     border-image-slice: 1;
 }
 
-.box_shadow_our_app {
+.box_shadow_our {
     border: 1px solid transparent;
 
 }
@@ -66,7 +65,7 @@
 }
 
 .line {
-    background-color: var(--color-clr_white) !important;
+    background-color: var(--color-clr_blue) !important;
     padding: 3px 18px;
     border-radius: 10px;
     margin-top: 3px;
@@ -128,23 +127,6 @@
     display: flex;
 }
 
-
-
-/* .red_line_hover:hover::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    margin: -2px;
-    border-radius: inherit;
-    background-image: linear-gradient(146.74deg,
-            rgba(232, 15, 15, 0) 0%,
-            #e80f0f 51.29%,
-            rgba(89, 89, 89, 0) 100%);
-} */
 /* Enables */
 .max_w_450 {
     max-width: 450px;
@@ -185,6 +167,22 @@
 }
 
 /* low */
+.low_hover:hover svg path {
+    fill: var(--color-clr_white);
+}
+
+.low_hover svg path {
+    transition: all 0.4s linear !important;
+}
+
+.low_hover:hover p {
+    color: var(--color-clr_blue) !important;
+}
+
+.low_hover p {
+    transition: all 0.4s linear !important;
+}
+
 .max_w_580 {
     max-width: 580px;
 }
@@ -220,7 +218,7 @@
     bottom: -150px;
 }
 
-/*  */
+/* accordion */
 .container_my {
     max-width: 980px !important;
     margin-left: auto;
@@ -277,6 +275,22 @@
 }
 
 /* Engage */
+.msg_hover span svg {
+    transition: all 0.5s linear;
+}
+
+.msg_hover:hover span svg {
+    transform: translateX(-8px);
+}
+
+.msg_hover span svg path {
+    transition: all 0.4s linear;
+}
+
+.msg_hover:hover span svg path {
+    fill: var(--color-clr_blue);
+}
+
 .msg_box {
     border-radius: 12px;
     border: 1px solid rgba(51, 167, 249, 0.18);
